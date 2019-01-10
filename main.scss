@@ -1,0 +1,172 @@
+$colorRoyalBlue: #2E52DC;
+$colorWhite:#ffffff;
+$colorCatskillWhite:#EBF0F6;
+$colorGallery: #EFEFEF;
+$colorBlack: #000000;
+$colorSilver: #CCCCCC;
+
+* {
+    box-sizing: content-box;
+}
+
+a {
+    text-decoration: none;
+    color: $colorRoyalBlue;
+}
+
+body {
+    width: 95%;
+    margin: 10px auto;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.containerFull {
+    display: flex;
+}
+
+.icons .fa {
+    font-size: 20px;
+    padding-right: 5px;
+    color: $colorWhite;
+}
+
+.icons li {
+    display: inline-block;
+}
+
+.icons {
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    width: 35%;
+    text-align: right;
+}
+
+.icons .fa-bell:before,
+.icons .fa-plus:before,
+.icons .fa-caret-down:before {
+    vertical-align: super;
+}
+
+.fa-img {
+    border-radius: 10px;
+    width: 32px;
+}
+
+.navegation {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: $colorBlack;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    padding-left: 10px;
+
+    &__faGit {
+        padding: 20px;
+        font-size: 50px;
+        color: $colorWhite;
+    }
+
+    &__search {
+        width: 300px;
+        height: 34px;
+        font-size: 15px;
+        padding-left: 12px;
+        color: $colorCatskillWhite;
+        background: none;
+        display: table-cell;
+        min-height: 26px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    &__menuMain {
+        list-style: none;
+
+        li {
+            list-style: none;
+            margin: 10px;
+            display: inline;
+            color: $colorWhite;
+        }
+    }
+
+}
+
+.info {
+
+    padding: 20px;
+    width: 200px;
+
+    &__photo {
+        width: inherit;
+
+        &__img {
+            border-radius: 10px;
+            width: 100%;
+        }
+    }
+
+    &__button {
+        width: 170px;
+        background: linear-gradient($colorWhite, $colorGallery);
+        font-weight: 700;
+        color: $colorBlack;
+        padding: 10px;
+    }
+
+    &__work {
+        margin: 0;
+    }
+
+    &__location {
+        margin: 5px 0;
+    }
+
+    &__email {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    &__web {
+        font-size: 12px;
+    }
+}
+
+.repo {
+    width: 100%;
+
+    &__container {
+        padding: 0 5px;
+
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__details {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $colorSilver;
+        }
+
+        &__language {
+            padding-right: 20px;
+            margin: 0;
+        }
+
+        &__forks {
+            padding: 0 20px;
+            margin: 0;
+        }
+
+        &__date {
+            padding: 0 20px;
+            margin: 0;
+        }
+
+    }
+}

@@ -1,0 +1,163 @@
+* {
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+  color: #2E52DC;
+}
+
+body {
+  width: 95%;
+  margin: 10px auto;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.containerFull {
+  display: flex;
+}
+
+.icons .fa {
+  font-size: 20px;
+  padding-right: 5px;
+  color: #ffffff;
+}
+
+.icons li {
+  display: inline-block;
+}
+
+.icons {
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  width: 35%;
+  text-align: right;
+}
+
+.icons .fa-bell:before,
+.icons .fa-plus:before,
+.icons .fa-caret-down:before {
+  vertical-align: super;
+}
+
+.fa-img {
+  border-radius: 10px;
+  width: 32px;
+}
+
+.navegation {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  border: 1px solid #cccccc;
+  background-color: #000000;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  padding-left: 10px;
+}
+
+.navegation__faGit {
+  padding: 20px;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.navegation__search {
+  width: 300px;
+  height: 34px;
+  font-size: 15px;
+  padding-left: 12px;
+  color: #EBF0F6;
+  background: none;
+  display: table-cell;
+  min-height: 26px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.navegation__menuMain {
+  list-style: none;
+}
+
+.navegation__menuMain li {
+  list-style: none;
+  margin: 10px;
+  display: inline;
+  color: #ffffff;
+}
+
+.info {
+  padding: 20px;
+  width: 200px;
+}
+
+.info__photo {
+  width: inherit;
+}
+
+.info__photo__img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.info__button {
+  width: 170px;
+  background: linear-gradient(#ffffff, #EFEFEF);
+  font-weight: 700;
+  color: #000000;
+  padding: 10px;
+}
+
+.info__work {
+  margin: 0;
+}
+
+.info__location {
+  margin: 5px 0;
+}
+
+.info__email {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.info__web {
+  font-size: 12px;
+}
+
+.repo {
+  width: 100%;
+}
+
+.repo__container {
+  padding: 0 5px;
+}
+
+.repo__container__title {
+  font-size: 20px;
+}
+
+.repo__container__details {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.repo__container__language {
+  padding-right: 20px;
+  margin: 0;
+}
+
+.repo__container__forks {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.repo__container__date {
+  padding: 0 20px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
